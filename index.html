@@ -37,15 +37,38 @@
                             <source src="videos/resting_cat.mp4" type="video/mp4"/>
                             Your browser doesn't support this video
                         </video>
+                        <button id="jqueryBtn">Hide P Tags - Jquery</button>
+                        <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
             </div>
             <div id="footer">
                         <a href="https://www.amazon.co.uk">Amazon</a></body></html><br/>
                         <a href="https://www.ebay.co.uk" target="_blank">eBay</a>
-            </div>
+            
+
+
+                    </div>
         
+
+
+            
 
         
  
+        <script src="javascript/jquery.min.js"></script>
+        <script src="javascript/site.js"></script>
+        <script>
+            function hidePTags()
+            {
+                let ptags = document.getElementsByTagName('p')
+                for(let item of ptags){
+                    item.style.visibility = 'hidden';
+                   // item.style.display = 'none';
+                }
+            }
 
+            $('#jqueryBtn').click(function(){
+                $('p').hide();
+            })
+        </script>
     </body>
 </html>

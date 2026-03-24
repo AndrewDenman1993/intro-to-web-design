@@ -58,7 +58,7 @@
         </tr>
     </table>
     <h2>General Inquiries</h2>
-    <form action="confirmation.html">
+    <form action="confirmation.html" id="contactForm">
         <label for="fullname">Name: *</label><br/>
         <input required type="text" id="fullname" name="fullname"/><br/><br/>
         <label for="email">E-Mail Address: *</label><br/>
@@ -70,7 +70,9 @@
         <textarea cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea><br/><br/>
 
         <input type="submit"/>
+        <button type="button" onclick="ClearForm()">Clear</button>
     </form>
     </main>
+    <script src="javascript/site.js"></script>
 </body>
 </html>
